@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Ký</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Cột bên trái -->
+    <div class="left-panel">
+      <img src="../restaurant.jpg" alt="Nhà hàng">
+      <div class="welcome-text">
+        <h2>Chào mừng đến với</h2>
+        <h1>Hệ Thống Quản Lý Nhà Hàng</h1>
+        <p>Tạo tài khoản để quản lý nhà hàng của bạn một cách hiệu quả và chuyên nghiệp.</p>
+      </div>
+    </div>
+
+    <!-- Cột bên phải -->
+    <div class="right-panel">
+      <a href="DangNhap.html" class="back-link">← Quay lại đăng nhập</a>
+      <h1 class="logo-text">🍴 Hệ Thống Quản Lý Nhà Hàng</h1>
+
+      <div class="form-card">
+        <h2>Đăng Ký Tài Khoản</h2>
+        <p class="subtitle">Tạo tài khoản mới để bắt đầu quản lý nhà hàng của bạn</p>
+
+        <form>
+          <div class="form-group">
+            <label for="fullname">Họ và tên</label>
+            <input type="text" id="fullname" placeholder="Nguyễn Văn An" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm">Xác nhận mật khẩu</label>
+            <input type="password" id="confirm" placeholder="Nhập lại mật khẩu" required>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">Tôi đồng ý với điều khoản sử dụng và chính sách bảo mật</label>
+          </div>
+
+          <button type="submit" class="btn-primary">Tạo tài khoản</button>
+        </form>
+
+        <p class="signin-link">Đã có tài khoản? <a href="DangNhap.html">Đăng nhập ngay</a></p>
+      </div>
+
+      <footer>© 2025 RestaurantOS. All rights reserved.</footer>
+    </div>
+  </div>
+</body>
+</html>

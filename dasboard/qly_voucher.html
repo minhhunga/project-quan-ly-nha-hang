@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý Nhà Hàng</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">🍴 Quản lý nhà hàng</h2>
+      <nav>
+        <ul>
+          <li><a href="#">📊 Thống kê</a></li>
+          <li><a href="#">📂 Quản lý danh mục</a></li>
+          <li><a href="#">🪑 Quản lý bàn</a></li>
+          <li><a href="#">📦 Quản lý sản phẩm</a></li>
+          <li><a href="#">🧾 Quản lý đơn hàng</a></li>
+          <li><a href="#">👤 Quản lý người dùng</a></li>
+          <li class="active"><a href="#">🏷️ Quản lý mã giảm giá</a></li>
+          <li><a href="#">📰 Quản lý bài viết</a></li>
+          <li><a href="#">📞 Quản lý liên hệ</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        <p>Đăng nhập với vai trò</p>
+        <p><b>Admin</b> (Quản trị viên)</p>
+        <a href="#">Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>Quản lý mã giảm giá</h1>
+        <p>Quản lý các mã giảm giá trong cửa hàng</p>
+      </header>
+
+      <section class="content-card">
+        <div class="content-header">
+          <h2>Quản lý mã giảm giá</h2>
+          <button class="btn-primary">+ Thêm mã giảm giá</button>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Mã giảm giá</th>
+              <th>Giảm giá</th>
+              <th>Số lượng còn lại</th>
+              <th>Thời gian</th>
+              <th>Đơn tối thiểu</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="6" class="no-data">No data</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,3 +1,4 @@
+/*ĐĂNG NHẬP*/
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -127,4 +128,268 @@ body {
 
 .form-options a:hover {
   text-decoration: underline;
+}
+
+/*ĐĂNG KÝ*/
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Bên trái */
+.left-panel {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+}
+
+.welcome-text h1 {
+  font-size: 1.8rem;
+  margin: 5px 0;
+}
+
+/* Bên phải */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background: #fff;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.logo-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.form-card h2 {
+  margin-bottom: 8px;
+}
+
+.form-card .subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.form-check input {
+  margin-right: 8px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #333;
+}
+
+.signin-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.signin-link a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*QUẢN LÝ MÃ GIẢM GIÁ*/
+/* Dashboard Layout */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #0d6efd;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 12px 0;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li.active a {
+  background: #084298;
+}
+
+.sidebar-footer {
+  font-size: 0.9rem;
+}
+
+.sidebar-footer a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px 40px;
+  background: #f9fafb;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.content-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.content-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
+.btn-primary {
+  padding: 6px 14px;          /* Nhỏ gọn hơn */
+  font-size: 14px;            /* Chữ nhỏ vừa phải */
+  font-weight: 500;
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;      /* Không chiếm full chiều ngang */
+  width: auto;                /* Fit nội dung */
+}
+
+.btn-primary:hover {
+  background: #084298;
+}
+
+
+/* Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.no-data {
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
 }
