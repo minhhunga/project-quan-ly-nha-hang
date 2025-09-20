@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý danh mục</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">🍴 Quản lý nhà hàng</h2>
+      <nav>
+        <ul>
+          <li><a href="#">📊 Thống kê</a></li>
+          <li class="active"><a href="#">📂 Quản lý danh mục</a></li>
+          <li><a href="#">🍽️ Quản lý bàn</a></li>
+          <li><a href="#">📦 Quản lý sản phẩm</a></li>
+          <li><a href="#">🧾 Quản lý đơn hàng</a></li>
+          <li><a href="#">👤 Quản lý người dùng</a></li>
+          <li><a href="#">🏷️ Quản lý mã giảm giá</a></li>
+          <li><a href="#">📝 Quản lý bài viết</a></li>
+          <li><a href="#">📞 Quản lý liên hệ</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        <p>Đăng nhập với vai trò</p>
+        <p><strong>Admin</strong> (Quản trị viên)</p>
+        <a href="#">Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>Quản lý danh mục</h1>
+        <p>Quản lý các danh mục món ăn</p>
+      </header>
+
+      <section class="content-card">
+        <div class="content-header">
+          <h2>Quản lý danh mục</h2>
+          <button class="btn-primary">+ Thêm danh mục</button>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Tên danh mục</th>
+              <th>Trạng thái</th>
+              <th>Nổi bật</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Món tráng miệng</td>
+              <td>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+                <span class="status active">Hoạt động</span>
+              </td>
+              <td>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+              </td>
+              <td>
+                <button class="btn-edit">Sửa</button>
+                <button class="btn-delete">Xóa</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
